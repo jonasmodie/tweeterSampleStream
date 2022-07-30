@@ -1,0 +1,249 @@
+
+{
+  "type" : "struct",
+  "fields" : [
+    {
+      "name" : "data",
+      "type" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "author_id",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "created_at",
+          "type" : "timestamp",
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "id",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+            "name" : "text",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : { }
+          },
+          {
+            "name" : "entities",
+            "type" : {
+              "type":"struct",
+              "fields": [
+                {
+                  "name": "mentions",
+                  "type": {
+                    "type": "array",
+                    "elementType": {
+                      "type": "struct",
+                      "fields": [
+                        {
+                          "name": "start",
+                          "type": "string",
+                          "nullable": false,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "end",
+                          "type": "string",
+                          "nullable": false,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "username",
+                          "type": "string",
+                          "nullable": false,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "id",
+                          "type": "string",
+                          "nullable": false,
+                          "metadata": {}
+                        }
+                      ]
+                    },
+                    "containsNull" : true
+                  },
+                  "nullable": true,
+                  "metadata": {}
+                },
+                {
+                  "name": "hashtags",
+                  "type": {
+                    "type": "array",
+                    "elementType": {
+                      "type": "struct",
+                      "fields": [
+                        {
+                          "name": "start",
+                          "type": "string",
+                          "nullable": false,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "end",
+                          "type": "string",
+                          "nullable": false,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "tag",
+                          "type": "string",
+                          "nullable": false,
+                          "metadata": {}
+                        }
+                      ]
+                    },
+                    "containsNull" : true
+                  },
+                  "nullable": true,
+                  "metadata": {}
+                }
+              ]
+            },
+            "nullable" : true,
+            "metadata" : { }
+          },
+          {
+            "name" : "geo",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : { }
+          },
+          {
+            "name" : "in_reply_to_user_id",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : { }
+          },
+          {
+            "name" : "lang",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : { }
+          },
+          {
+            "name" : "public_metrics",
+            "type" :{
+              "type" : "struct",
+              "fields": [
+                {
+                  "name": "retweet_count",
+                  "type": "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                },
+                {
+                  "name": "reply_count",
+                  "type": "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                },
+                {
+                  "name": "like_count",
+                  "type": "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                }
+              ]
+            },
+            "nullable" : true,
+            "metadata" : { }
+          },
+          {
+            "name" : "organic_metrics",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : { }
+          }
+        ]
+      },
+      "nullable" : true,
+      "metadata" : { }
+    },
+    {
+      "name" : "includes",
+      "type" : {
+        "type" : "struct",
+        "fields" : [
+          {
+            "name": "places",
+            "type":"string",
+            "nullable" : true,
+            "metadata" : { }
+          },
+          {
+            "name" : "users",
+            "type" : {
+              "type" : "array",
+              "elementType" : {
+                "type" : "struct",
+                "fields" : [
+                  {
+                    "name" : "created_at",
+                    "type" : "timestamp",
+                    "nullable" : true,
+                    "metadata" : { }
+                  },
+                  {
+                    "name" : "id",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : { }
+                  },
+                  {
+                    "name" : "name",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : { }
+                  },
+                  {
+                    "name" : "username",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : { }
+                  }
+                ]
+              },
+              "containsNull" : true
+            },
+            "nullable" : true,
+            "metadata" : { }
+          }
+        ]
+
+      },
+      "nullable" : true,
+      "metadata" : { }
+    },
+    {
+      "name" : "matching_rules",
+      "type" : {
+        "type" : "array",
+        "elementType" : {
+          "type" : "struct",
+          "fields" : [
+            {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            },
+            {
+              "name" : "tag",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }
+          ]
+        },
+        "containsNull" : true
+      },
+      "nullable" : true,
+      "metadata" : { }
+    }
+  ]
+}

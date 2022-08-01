@@ -28,6 +28,14 @@ dist
 test-output
 build.log
 
+# manual
+config
+notes
+QueryExample.txt
+sample_of_data.json
+storage
+
+
 # other scm
 .svn
 .CVS

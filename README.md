@@ -13,17 +13,17 @@ APP_ACCESS_TOKEN = "xxxxxxxx"
 hashTagReportPartition=["lang"]
 sampleStreamPartition=["lang","created_at_date"] \ 
 
-#Development
+# Development
 To run the application locally you will need to setup your environent with the following versions
 
 scala 2.12.15
 spark 3.3.0
 
-#Deployment
+# Deployment
  Change Object App SparkSession builder() code from master(Local[*]) to master("yarn")
  run mvn clean compile package
 
-#Spark submit example
+# Spark submit example
     #pass the path to the confug file you created above
 spark-submit --class org.simpleetl.App twitterAnalyser-1.0-SNAPSHOT.jar --configFilePath /path/to/config/application.conf --publishFolderPath /path/to/storage/
 

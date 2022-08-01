@@ -1,10 +1,10 @@
-# tweeter Sample Stream application
+# Tweeter Sample Stream application
 
 The application streams sample of tweets from twitter v2 api
 
 To run the application you will need to create config(.conf) file and pass it as paramater 
 
-# below are the key value pair requeird in application.conf
+# Below are the key value pair requeird in application.conf
 
      recordLimit = 10 ## this is to limit the number of stream record being pulled from tweeter api
      schemaFilePath = "/home/jonas/Academics/twitterAnalyser/schema/schema.json"

@@ -25,7 +25,7 @@ spark 3.3.0
 
 # Spark submit example
     #pass the path to the confug file you created above
-spark-submit --class org.simpleetl.App twitterAnalyser-1.0-SNAPSHOT.jar --configFilePath /path/to/config/application.conf --publishFolderPath /path/to/storage/
+    # spark-submit --class org.simpleetl.App twitterAnalyser-1.0-SNAPSHOT.jar --configFilePath /path/to/config/application.conf --publishFolderPath /path/to/storage/
 
 # local environment examaple
 spark-submit --class org.simpleetl.App twitterAnalyser-1.0-SNAPSHOT.jar --configFilePath /home/jonas/Academics/twitterAnalyser/config/application.conf --publishFolderPath /home/jonas/Academics/twitterAnalyser/storage/

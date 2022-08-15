@@ -1,6 +1,7 @@
 # Tweeter Sample Stream application
 
 The application streams sample of tweets from twitter v2 api
+ https://developer.twitter.com/en/docs/twitter-api 
 
 To run the application you will need to create config(.conf) file and pass it as paramater 
 

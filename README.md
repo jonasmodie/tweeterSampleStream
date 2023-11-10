@@ -15,7 +15,7 @@ To run the application you will need to create config(.conf) file and pass it as
      sampleStreamPartition=["lang","created_at_date"]
 
 # Development
-To run the application locally you will need to setup your environent with the following versions
+To run the application locally you will need to set up your environment with the following versions
 
 scala 2.12.15
 spark 3.3.0
